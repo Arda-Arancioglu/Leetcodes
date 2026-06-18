@@ -1,5 +1,5 @@
 class Solution:
-    def twoSum(self, nums: List[int], target: int) -> List[int]:    
+    def twoSum(self, nums: list[int], target: int) -> list[int]:    
                
         listoflists=[]
         lengthofSet=len(nums)
@@ -13,3 +13,7 @@ class Solution:
                         listoflists=[head,i]
                     i=i+1 
         return listoflists
+
+nums = [1,4,3,2]
+mySol = Solution()
+print(mySol.twoSum(nums,5))
