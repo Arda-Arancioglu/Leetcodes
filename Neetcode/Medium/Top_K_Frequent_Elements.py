@@ -1,18 +1,17 @@
 class Solution:
     def topKFrequent(self, nums: list[int], k: int) -> list[int]:
         myMap= {}
-        myList=[]
         finalList=[]
         for i in nums:
             if i not in myMap:
                 myMap[i] = 1
             else:
                 myMap[i] += 1
+
         total = k
-        biggest=[0]*k+[1] 
         bestkey=0
         bestval=0
-
+        
         while total > 0: 
             bestkey=0
             bestval=0       
@@ -24,13 +23,7 @@ class Solution:
             myMap[bestkey] = -1    
 
             total-=1
-
-
         return finalList        
-
-
-        
-
 
 
 
