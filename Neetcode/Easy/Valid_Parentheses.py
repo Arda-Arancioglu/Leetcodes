@@ -4,7 +4,7 @@ class Solution:
         for str in s:
              
             if str == "(" or str == "[" or str == "{" :
-                print("appending",str,"to:\n",stack)
+                # print("appending",str,"to:\n",stack)
                 stack.append(str)
             else:
                 if len(stack)< 1 :
