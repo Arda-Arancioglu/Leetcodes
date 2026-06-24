@@ -8,8 +8,7 @@ class Solution:
         tail=len(nums)-1
         i=0
         k=0
-        # if nums.count(0) >= 3:
-        #     myList.append([0,0,0])
+        
         while i < len(nums)-2:
             head=i+1
             tail = len(nums)-1
